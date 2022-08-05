@@ -32,3 +32,6 @@ type proc_oppo_rf, fs_type, proc_type;
 type proc_fw_update, fs_type, proc_type;
 
 type proc_decimal, fs_type, proc_type;
+
+# KProfiles
+type sysfs_kprofiles, sysfs_type, fs_type;
