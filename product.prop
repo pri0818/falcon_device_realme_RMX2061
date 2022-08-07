@@ -2,9 +2,6 @@
 ro.charger.enable_suspend=true
 
 # Display
-debug.sf.hw=0
-debug.egl.hw=0
-debug.sf.latch_unsignaled=1
 debug.mdpcomp.logs=0
 vendor.gralloc.disable_ubwc=0
 vendor.display.disable_scaler=0
@@ -22,8 +19,3 @@ ro.config.low_ram=false
 
 # Incremental FS
 ro.incremental.enable=1
-
-# IORap
-ro.iorapd.enable=true
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
