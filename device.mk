@@ -14,9 +14,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product-if-exists, vendor/realme/sm7125-common/sm7125-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/realme/RMX2061/RMX2061-vendor.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
