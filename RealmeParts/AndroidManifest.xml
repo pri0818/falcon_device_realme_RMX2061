@@ -48,7 +48,7 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures" />
+                android:resource="@drawable/ic_laboratory" />
             <meta-data
                 android:name="com.android.settings.bg.hint"
                 android:resource="@color/icon_bg_color"  />
