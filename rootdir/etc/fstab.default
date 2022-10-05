@@ -41,7 +41,7 @@ vendor                                                 /vendor                  
 odm                                                    /odm                      ext4    ro,barrier=1,discard                               wait,logical,first_stage_mount
 
 # Core partitions
-/dev/block/by-name/metadata                            /metadata                 ext4    noatime,nosuid,nodev,discard                       wait,formattable,wrappedkey,first_stage_mount
+/dev/block/by-name/metadata                            /metadata                 ext4    noatime,nosuid,nodev,discard                       wait,formattable,first_stage_mount
 /dev/block/bootdevice/by-name/userdata                 /data                     f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt,background_gc=sync,gc_merge,atgc,checkpoint_merge,compress_algorithm=lz4,compress_extension=apk,compress_extension=apex,compress_extension=so     latemount,wait,check,resize,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,fscompress,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs
 /dev/block/bootdevice/by-name/cache                    /cache                    f2fs    nosuid,noatime,nodev,flush_merge,data_flush                     wait
 /dev/block/bootdevice/by-name/misc                     /misc                     emmc    defaults                                           defaults
