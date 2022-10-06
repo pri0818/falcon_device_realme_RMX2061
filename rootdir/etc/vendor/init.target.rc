@@ -124,6 +124,7 @@ on boot
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/audio-app/cpus 1-2
 #ifdef VENDOR_EDIT
 #Kai.Du@RM.AD.Performance, 2020/11/2, Modify for boost boot time
     write /dev/cpuset/background/cpus 0-5
