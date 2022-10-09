@@ -86,7 +86,7 @@
     <bool translatable="false" name="config_wifi_diagnostics_bugreport_enabled">true</bool>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">AndroidAP</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">RMX2061</string>
 
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
