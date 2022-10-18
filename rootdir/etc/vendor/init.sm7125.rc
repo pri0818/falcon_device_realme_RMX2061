@@ -6,6 +6,12 @@ on init
     chown system system /proc/ui_soc_decimal
     write /proc/ui_soc_decimal 1
 
+on fs
+    mkdir /mnt/vendor/oppo_product 0771 system system
+    mkdir /mnt/vendor/oppo_version 0771 system system
+    mount ext4 /dev/block/mapper/version.${ro.vendor.version_variant} /mnt/vendor/oppo_version ro
+    mount ext4 /dev/block/mapper/oppo_product /mnt/vendor/oppo_product ro
+
 on boot
     # Disable edge limit control interface
     chmod 0660 /proc/touchpanel/oplus_tp_limit_enable
@@ -37,6 +43,22 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     class hal
     user nfc
     group nfc
+
+service prop-adap-core-gsi /vendor/bin/self-init gsicore
+    class core
+    user root
+    group root system radio
+    oneshot
+    override
+    disabled
+
+service prop-adap-main-gsi /vendor/bin/self-init gsimain
+    class main
+    user root
+    group root system radio
+    oneshot
+    override
+    disabled
 
 service debug_logcat /system/bin/logcat -f /cache/logcat.txt -v threadtime
     class main
