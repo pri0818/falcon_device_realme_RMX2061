@@ -227,6 +227,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 >>>>>>> 072c337 (RMX2061: Merge RMX2061 device tree into common tree):BoardConfig.mk
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Treble
 BOARD_VNDK_VERSION := current
 
