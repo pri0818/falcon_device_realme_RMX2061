@@ -53,6 +53,9 @@ vendor.display.svi.config_path=/vendor/etc/svi_config_19720.xml
 # DPM
 persist.dpm.feature=1
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # GBoard
 ro.com.google.ime.kb_pad_port_l=6
 ro.com.google.ime.kb_pad_port_r=6
