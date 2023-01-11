@@ -261,8 +261,20 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+
+# Overlays RRO
+PRODUCT_PACKAGES += \
+   CarrierConfigOverlay \
+   FrameworksResOverlay \
+   SettingsOverlay \
+   SettingsProviderOverlay \
+   SystemUIOverlay \
+   TelephonyOverlay \
+   TetheringConfigOverlay \
+   WifiOverlay
+
+PRODUCT_ENFORCE_RRO_TARGETS := *   
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -353,10 +365,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
-
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
@@ -398,7 +406,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
