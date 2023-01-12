@@ -60,4 +60,8 @@
     <!-- Padding between signal cluster and battery icon -->
     <dimen name="signal_cluster_battery_padding">3dp</dimen>
 
+    <!-- Location of physical power button -->
+    <dimen name="physical_power_button_center_screen_location_y">905px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">905px</dimen>
+
 </resources>
