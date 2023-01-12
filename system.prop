@@ -29,6 +29,9 @@ dalvik.vm.dexopt.secondary=true
 # Disable remote keyguard animation
 persist.wm.enable_remote_keyguard_animation=0
 
+# Display
+vendor.display.svi.config_path=/vendor/etc/svi_config_19720.xml
+
 # DPM
 persist.dpm.feature=1
 

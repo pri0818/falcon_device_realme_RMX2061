@@ -1,0 +1,5 @@
+on init
+    # Update Fastchg FW
+    #chmod 0660 /proc/fastchg_fw_update
+    #chown system system /proc/fastchg_fw_update
+    #write /proc/fastchg_fw_update 1
